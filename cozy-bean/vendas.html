@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nossos Produtos | The Cozy Bean</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================================
+         NAVBAR
+    ==================================== -->
+
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand logo" href="#">
+                THE COZY BEAN
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#delivery" class="nav-link">Delivery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#reservas" class="nav-link">Reservas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#galeria" class="nav-link">Galeria</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-caramel">
+                        Cadastro do usuário
+                    </button>
+
+                    <button class="btn btn-outline-light">
+                        Login
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===================================
+         HERO SECTION
+    ==================================== -->
+
+    <header class="hero-section-produtos">
+
+        <div class="overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <h1>Nossos Produtos Premium</h1>
+
+                    <p>Seleção exclusiva de cafés artesanais e iguarias para sua experiência Cozy Bean.</p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#produtos" class="btn btn-outline-light btn-lg">
+                            Ver Catálogo
+                        </a>
+
+                        <a href="#" class="btn btn-caramel btn-lg">
+                            Fazer Pedido
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ===================================
+         FILTROS E CATEGORIAS
+    ==================================== -->
+
+    <section class="filter-section section-padding">
+
+        <div class="container">
+
+            <h2 class="section-title">Categorias de Produtos</h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12">
+
+                    <div class="filter-buttons">
+
+                        <button class="btn-filter active" data-filter="todos">Todos os Produtos</button>
+                        <button class="btn-filter" data-filter="cafes">Cafés</button>
+                        <button class="btn-filter" data-filter="doces">Doces e Bolos</button>
+                        <button class="btn-filter" data-filter="acessorios">Acessórios</button>
+                        <button class="btn-filter" data-filter="promocoes">Promoções</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         PRODUTOS
+    ==================================== -->
+
+    <section id="produtos" class="products-section section-padding">
+
+        <div class="container">
+
+            <div class="row g-4" id="products-grid">
+
+                <!-- Produto 1 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="cafes">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria1.png" alt="Espresso Premium">
+                            <span class="badge-categoria">Café</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Espresso Premium</h3>
+                            <p class="product-description">Blend especial de grãos selecionados da América Central</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="rating-text">(245 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">R$ 45,90</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="cafes">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria2.png" alt="Cappuccino Artesanal">
+                            <span class="badge-categoria">Café</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Cappuccino Artesanal</h3>
+                            <p class="product-description">Café cremoso com leite vaporizado na temperatura perfeita</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <span class="rating-text">(189 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">R$ 28,50</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="doces">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria3.png" alt="Bolo de Chocolate">
+                            <span class="badge-categoria">Doce</span>
+                            <span class="badge-promocao">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bolo de Chocolate</h3>
+                            <p class="product-description">Bolo de chocolate com cobertura ganache artesanal</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="rating-text">(312 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price"><del>R$ 52,00</del> R$ 41,60</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="acessorios">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria1.png" alt="Xícara Premium">
+                            <span class="badge-categoria">Acessório</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Xícara Premium</h3>
+                            <p class="product-description">Xícara em porcelana com design exclusivo Cozy Bean</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="rating-text">(98 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">R$ 65,90</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="cafes">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria2.png" alt="Cold Brew Premium">
+                            <span class="badge-categoria">Café</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Cold Brew Premium</h3>
+                            <p class="product-description">Café gelado concentrado para um refrescante perfeito</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="rating-text">(267 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">R$ 38,90</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="doces">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria3.png" alt="Croissant de Chocolate">
+                            <span class="badge-categoria">Doce</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Croissant de Chocolate</h3>
+                            <p class="product-description">Croissant feito na hora com chocolate belga derretido</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <span class="rating-text">(156 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">R$ 22,50</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 7 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="acessorios">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria1.png" alt="Moedor de Café">
+                            <span class="badge-categoria">Acessório</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Moedor de Café Elétrico</h3>
+                            <p class="product-description">Moedor profissional com 15 níveis de granulometria</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="rating-text">(87 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price">R$ 299,90</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 8 -->
+                <div class="col-lg-3 col-md-6 col-sm-12" data-category="promocoes">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/galeria2.png" alt="Kit Completo Cozy Bean">
+                            <span class="badge-categoria">Promoção</span>
+                            <span class="badge-promocao">-35%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kit Completo Cozy Bean</h3>
+                            <p class="product-description">Kit com 2 cafés + xícara + acessórios em promoção</p>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="rating-text">(542 avaliações)</span>
+                            </div>
+                            <div class="product-footer">
+                                <span class="price"><del>R$ 189,00</del> R$ 122,85</span>
+                                <button class="btn-add-cart">
+                                    <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         DIFERENCIAIS
+    ==================================== -->
+
+    <section class="diferencias section-padding">
+
+        <div class="container">
+
+            <h2 class="section-title">Por Que Escolher Nossos Produtos?</h2>
+
+            <div class="row g-4 text-center">
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="diferencial-card">
+                        <div class="diferencial-icon">
+                            <i class="bi bi-leaf"></i>
+                        </div>
+                        <h3>100% Natural</h3>
+                        <p>Sem aditivos ou conservantes. Apenas qualidade premium.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="diferencial-card">
+                        <div class="diferencial-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h3>Entrega Rápida</h3>
+                        <p>Seu pedido chega quentinho na sua porta em até 2h.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="diferencial-card">
+                        <div class="diferencial-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <h3>Garantia de Satisfação</h3>
+                        <p>Se não gostar, devolva em 7 dias sem perguntas.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         NEWSLETTER
+    ==================================== -->
+
+    <section class="newsletter section-padding">
+
+        <div class="container">
+
+            <div class="newsletter-box">
+
+                <h2>Receba Nossas Promoções</h2>
+
+                <p>Inscreva-se para receber as melhores ofertas diretamente no seu e-mail</p>
+
+                <form class="newsletter-form">
+
+                    <div class="input-group">
+
+                        <input type="email" class="form-control" placeholder="Digite seu e-mail">
+
+                        <button class="btn btn-caramel" type="submit">Inscrever</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         FOOTER
+    ==================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-4 align-items-start">
+
+                <div class="col-lg-4 col-md-6 col-12">
+
+                    <h3 class="footer-brand">THE COZY BEAN</h3>
+
+                    <p class="foot-text">Experiências inesquecíveis em cada xícara.</p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <h5 class="foot-title">Contato</h5>
+
+                    <p class="foot-text mb-2"><i class="bi bi-telephone"></i> (21) 99999-9999</p>
+                    <p class="foot-text"><i class="bi bi-envelope"></i> contato@thecozybean.com</p>
+
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-12">
+
+                    <h5 class="foot-title">Links Rápidos</h5>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Galeria</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <h5 class="foot-title">Redes Sociais</h5>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" class="social-link facebook" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="http://wa.me/5521993954169" class="social-link whatsapp" title="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-link instagram" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/pt-BR/" class="social-link tiktok" title="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://x.com/?lang=pt-BR" class="social-link twitter" title="Twitter/X">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Cozy Bean. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <!-- Script para Filtro de Produtos -->
+    <script>
+        document.querySelectorAll('.btn-filter').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove classe ativa de todos os botões
+                document.querySelectorAll('.btn-filter').forEach(btn => btn.classList.remove('active'));
+                // Adiciona classe ativa ao botão clicado
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+                const products = document.querySelectorAll('[data-category]');
+
+                products.forEach(product => {
+                    if (filter === 'todos' || product.getAttribute('data-category') === filter) {
+                        product.style.display = 'block';
+                        setTimeout(() => product.classList.add('fade-in'), 10);
+                    } else {
+                        product.style.display = 'none';
+                        product.classList.remove('fade-in');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

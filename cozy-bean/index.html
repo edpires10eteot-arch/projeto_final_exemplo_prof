@@ -46,7 +46,7 @@
                 <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a href="#cardapio" class="nav-link">Cardápio</a>
+                        <a href="vendas.html" class="nav-link">Cardápio</a>
                     </li>
 
                     <li class="nav-item">
@@ -207,16 +207,44 @@
     <!--=====================================
         CARROSSEL
     ============================================-->
-    <Section class="container section-padding">
-        <div id="CarouselCafe" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel"></div>
-            <p>Qualidade e Sabor</p>
-        </div>
-        <div>
+    <section id="carousel-section" class="carousel-section section-padding">
+        <div class="container">
+            <h2 class="section-title">Qualidade e Sabor</h2>
 
-        </div>
+            <div id="CarouselCafe" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Indicadores (Pontos de Navegação) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#CarouselCafe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#CarouselCafe" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#CarouselCafe" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
 
-    </Section>
+                <!-- Itens do Carrossel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/galeria1.png" class="d-block w-100" alt="Espresso Premium">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria2.png" class="d-block w-100" alt="Cappuccino Artesanal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria3.png" class="d-block w-100" alt="Blend Especial">
+                    </div>
+                </div>
+
+                <!-- Controles (Setas de Navegação) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#CarouselCafe" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#CarouselCafe" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ===================================

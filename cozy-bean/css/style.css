@@ -224,6 +224,7 @@ body {
         gap: 12px;
         flex-wrap: nowrap;
         align-items: center;
+    
         .social a{
             display: inline-flex;
             align-items: center;
@@ -255,4 +256,525 @@ body {
         }
     }
 
+
+/* ===================================
+   PÁGINA DE PRODUTOS - ESTILOS
+=================================== */
+
+/* Hero Section Produtos */
+.hero-section-produtos {
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(198, 122, 66, 0.3) 0%, rgba(45, 26, 18, 0.4) 100%), 
+                url('../img/galeria2.png') center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
 }
+
+.hero-section-produtos h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.hero-section-produtos p {
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 30px;
+}
+
+/* Seção de Filtros */
+.filter-section {
+    background: var(--color-bg-cream);
+    padding: 60px 0;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-filter {
+    padding: 12px 28px;
+    border: 2px solid var(--caramel);
+    background: transparent;
+    color: var(--caramel);
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+    background: var(--caramel);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(198, 122, 66, 0.3);
+}
+
+/* Seção de Produtos */
+.products-section {
+    background: #fff;
+    padding: 80px 0;
+}
+
+/* Card de Produto */
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    background: var(--color-bg-beige);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+/* Badges */
+.badge-categoria {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--caramel);
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-promocao {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #d32f2f;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* Info do Produto */
+.product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--dark-text-dark);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.product-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Rating */
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.product-rating i {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.rating-text {
+    color: #999;
+    font-size: 0.85rem;
+    margin-left: 5px;
+}
+
+/* Footer do Produto */
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}
+
+.price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--caramel);
+    font-weight: 700;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+.btn-add-cart {
+    background: var(--caramel);
+    border: none;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.btn-add-cart:hover {
+    background: #a65f2f;
+    transform: scale(1.1);
+}
+
+/* Seção Diferenciais */
+.diferencias {
+    background: var(--color-bg-beige);
+}
+
+.diferencial-card {
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.diferencial-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--caramel);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.diferencial-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--dark-text-dark);
+    margin-bottom: 15px;
+}
+
+.diferencial-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Newsletter */
+.newsletter {
+    background: linear-gradient(135deg, var(--dark-text-dark) 0%, rgba(45, 26, 18, 0.8) 100%);
+}
+
+.newsletter-box {
+    text-align: center;
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-box h2 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-box p {
+    color: #ddd;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form .input-group {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.newsletter-form .form-control {
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+
+.newsletter-form .form-control::placeholder {
+    color: #999;
+}
+
+.newsletter-form .btn-caramel {
+    border-radius: 0;
+    padding: 15px 40px;
+}
+
+/* Footer - Redes Sociais com Cores Oficiais */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: var(--color-bg-cream);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--caramel);
+}
+
+/* Social Icons com Cores Oficiais */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+/* Cores Oficiais das Redes Sociais */
+.social-link.facebook {
+    background: #1877F2;
+}
+
+.social-link.facebook:hover {
+    background: #155db4;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(24, 119, 242, 0.3);
+}
+
+.social-link.whatsapp {
+    background: #25D366;
+}
+
+.social-link.whatsapp:hover {
+    background: #1da851;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.social-link.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-link.instagram:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(224, 148, 51, 0.3);
+}
+
+.social-link.tiktok {
+    background: linear-gradient(135deg, #000000 0%, #25f4ee 50%, #000000 100%);
+}
+
+.social-link.tiktok:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(37, 244, 238, 0.3);
+}
+
+.social-link.twitter {
+    background: #000000;
+}
+
+.social-link.twitter:hover {
+    background: #1a1a1a;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .filter-buttons {
+        gap: 10px;
+    }
+
+    .btn-filter {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+
+    .product-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .hero-section-produtos h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section-produtos p {
+        font-size: 0.95rem;
+    }
+
+    .newsletter-box {
+        padding: 40px 20px;
+    }
+
+    .newsletter-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .filter-buttons {
+        gap: 8px;
+    }
+
+    .btn-filter {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-info h3 {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .btn-add-cart {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .newsletter-form .input-group {
+        flex-direction: column;
+    }
+
+    .newsletter-form .form-control,
+    .newsletter-form .btn-caramel {
+        width: 100%;
+    }
+
+    .diferencial-card {
+        padding: 25px 20px;
+    }
+
+    .hero-section-produtos h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Animação de Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
